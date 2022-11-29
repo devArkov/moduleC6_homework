@@ -1,0 +1,31 @@
+h2 {
+    color: teal;
+}
+
+.btn {
+    display: flex;
+    padding: 7px 15px;
+    border: 1px solid teal;
+    outline: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: teal;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: teal;
+    color: #fff;
+}
+
+.btn-text {
+    margin-right: 10px;
+}
+
+.icon {
+    display: none;
+}
+
+.icon.active {
+    display: inline;
+}
