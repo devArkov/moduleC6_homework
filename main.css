@@ -1,0 +1,24 @@
+h1 {
+    color: teal;
+}
+
+.btn {
+    /* display: block; */
+    text-decoration: none;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid teal;
+    outline: none;
+    border-radius: 3px;
+    color: teal;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
