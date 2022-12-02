@@ -27,7 +27,7 @@ const renderChatBotResponse = (userInput) => {
 }
 
 const getChatBotResponse = (userInput) => {
-    return responseObj[userInput] == undefined ? 'Plase try something else' : responseObj[userInput]; 
+    return responseObj[userInput] == undefined ? userInput : responseObj[userInput]; 
 }
 
 const renderMessageElement = (txt, type) => {
