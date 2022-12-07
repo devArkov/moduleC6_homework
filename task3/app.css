@@ -10,6 +10,11 @@ h2 {
     color: teal;
 }
 
+.instructions {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
 .container {
     position: absolute;
     top: 50%;
@@ -70,7 +75,7 @@ h2 {
     padding: 20px;
 }
 
-.user-message, .bot-message {
+.user-message, .bot-message, .bot-message__geo {
     width: max-content;
     margin: 5px;
     padding: 8px 10px;
@@ -82,13 +87,25 @@ h2 {
     border: 3px solid #90ee90;
 }
 
-.bot-message {
+.bot-message, .bot-message__geo {
     align-self: flex-end;
     border-radius: 10px 10px 5px 10px;
     border: 3px solid #bad7ec;    
 }
 
-.close {
+.bot-message__geo {
+    text-decoration: none;
+    background-color: #bad7ec;
+    color: #000;
+}
+
+.bot-message__geo:hover {
+    background-color: transparent;
+    border: 3px solid #bad7ec;
+    cursor: pointer;
+}
+
+.btn-close {
     position: absolute;
     top: -35px;
     right: 0;
@@ -98,7 +115,7 @@ h2 {
     outline: none;
 }
 
-.close:hover {
+.btn-close:hover {
     background-color: transparent;
     cursor: pointer;
     border: 3px solid #bad7ec;
@@ -111,6 +128,7 @@ h2 {
     margin-left: 20px;
     padding: 7px 15px;
     border: 1px solid teal;
+    text-decoration: none;
     outline: none;
     background-color: transparent;
     font-weight: 500;
@@ -120,6 +138,7 @@ h2 {
 
 .btn-back:hover {
     cursor: pointer;
+    border-color: transparent;
     background-color: teal;
     color: #fff;
 }

@@ -5,26 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
 
     <h2>Task 3 (C6.6 - WebSockets)</h2>
 
-    <div class="container">
-        <div class="chat-header">
-            <input class="text-input" type="text" placeholder="Здесь вводится текст сообщения">
-            <button class="btn btn-send">Отправить</button>
-            <button class="btn btn-geo">Гео-локация</button>
-        </div>
-        <div class="chat-body"></div>
-        <button class="close">✖</button>
-    </div>
-
-
     <a href="../index.html" class="btn btn-back">Назад</a>
 
+        <div class="instructions">
+            <h3>Бот умеет:</h3>
+            <ul>
+                <li>Отвечать на приветствие - введите <strong>"hi" </strong>или<strong>"hey"</strong></li>
+                <li>Выводить текущее время - <strong>time</strong></li>
+                <li>Выводить текущую дату - <strong>today</strong></li>
+                <li>Если бот не знает команду - будет повторять введённое пользователем</li>
+            </ul>
+        </div>   
+    
+        <div class="container">
+            <div class="chat-header">
+                <input class="text-input" type="text" placeholder="Здесь вводится текст сообщения">
+                <button class="btn btn-send">Отправить</button>
+                <button class="btn btn-geo">Гео-локация</button>
+            </div>
+            <div class="chat-body"></div>
+            <button class="btn-close" title="Завершить чат">✖</button>
+        </div>
+
+
+
 <script src="response.js"></script>
-<script src="main.js"></script>
+<script src="app.js" defer></script>
 </body>
 </html>
