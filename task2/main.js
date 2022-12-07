@@ -12,8 +12,8 @@ let viewScrollWidth = window.innerWidth;
 let viewScrollHeight = window.innerHeight;
 
 btn.addEventListener('click', () => {
-    alert(`\t\tРазмеры экрана: ${screenWidth}px на ${screenHeight}px \n 
+    alert(`\t\tРазмеры экрана: ${screenWidth}px, на ${screenHeight}px \n 
            Область просмотра: ${viewWidth}px на ${viewHeight}px, \n
-           Область просмотра + скролл: ${viewScrollHeight}px на ${viewScrollHeight}px 
+           Область просмотра + скролл: ${viewScrollHeight}px на ${viewScrollHeight}px.
            `);
 });

@@ -24,12 +24,6 @@ sendBtn.addEventListener('click', () => {
         renderMessageElement('Соединение разорвано');
     }
 
-    closeBtn.addEventListener('click', () => {
-        websocket.close();
-        websocket = null;
-        renderMessageElement('Bye..');
-    });
-
     renderUserMessage();
 });
 
@@ -51,7 +45,7 @@ const renderUserMessage = () => {
     }, 700);
 }
 
-// Слздание элемента сообщения
+// Создание элемента сообщения
 const renderMessageElement = (text, type) => {
     let className = 'user-message';
     if (type !== 'user') {
@@ -71,7 +65,7 @@ const renderChatbotResponse = (userInput) => {
 }
 
 // Получение ответа бота из набора заготовок или дублирование текста пользователя
-const getChatbotResponse = (userInput) => {
+const getChatbotResponse = (userInput) => {https://devarkov.github.io/moduleC6_homework/task3/index.html
     return responseObj[userInput] === undefined ? userInput : responseObj[userInput];
 }
 
@@ -114,8 +108,10 @@ const success = (position) => {
     renderMessageElement(locationData);
 
     const mapLink =`https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-    renderMapLinkElement(mapLink);
-    setScrollPosition();
+    setTimeout(() => {
+        renderMapLinkElement(mapLink);
+        setScrollPosition();
+    }, 1000);
 }
 
 // Вывод на эеран сообщения об ошибке

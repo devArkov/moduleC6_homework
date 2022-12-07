@@ -97,6 +97,7 @@ h2 {
     text-decoration: none;
     background-color: #bad7ec;
     color: #000;
+    transition: .5s;
 }
 
 .bot-message__geo:hover {
